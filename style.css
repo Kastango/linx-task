@@ -183,12 +183,13 @@ section.cards .card .content {
 section.cards .card .content h3{
   font-weight: bold;
   color: var(--dark-grey);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 section.cards .card .content p{
   padding-top: 5px;
   padding-bottom: 5px;  
+  font-size: 0.8rem;
 }
 
 section.cards .card .content small{
@@ -432,8 +433,12 @@ footer{
     height: 250px;
   }
 
+  section.cards .card .deadline small{
+    display: none;
+  }
+
   section.cards .card .image img {
-    width: 160px;
+    width: 130px;
   }
 
   section.cards .card .interactions{
@@ -498,7 +503,7 @@ footer{
 
 @media (max-width: 840px){
 
-  section.cards{
-    grid-template-columns: repeat(auto-fit, minmax(396px, 1fr))
+  section.cards{ 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
   }
 }
